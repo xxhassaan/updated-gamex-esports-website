@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Register - GameX Tournament</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <style>
+    body {
+      background: var(--eerie-black);
+      color: var(--white);
+      padding-top: 90px; /* account for fixed header */
+    }
+
+    .register-container {
+      background: var(--raisin-black-1);
+      border: 1px solid hsla(0, 0%, 100%, 0.08);
+      border-radius: 12px;
+      padding: 40px;
+      max-width: 700px;
+      margin: 0 auto;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .register-title {
+      color: var(--white);
+      font-family: var(--ff-oswald);
+      font-size: var(--fs-2);
+      text-align: center;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-label {
+      display: block;
+      color: var(--platinum);
+      font-size: var(--fs-9);
+      margin-bottom: 8px;
+      font-weight: var(--fw-500);
+    }
+
+    .form-control {
+      width: 100%;
+      padding: 14px 16px;
+      background: var(--raisin-black-2);
+      border: 1px solid hsla(0, 0%, 100%, 0.1);
+      border-radius: 6px;
+      color: var(--white);
+      font-size: var(--fs-8);
+    }
+
+    .form-control:focus {
+      outline: none;
+      border-color: var(--bright-red);
+    }
+
+    .form-control::placeholder {
+      color: var(--light-gray);
+    }
+
+    .btn-register {
+      width: 100%;
+      padding: 14px;
+      background: var(--red);
+      color: var(--white);
+      font-family: var(--ff-oswald);
+      font-size: var(--fs-7);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .btn-register:hover {
+      background: var(--bright-red);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 20px;
+      color: var(--bright-red);
+      text-decoration: none;
+      font-size: var(--fs-9);
+    }
+
+    .back-link:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <div class="register-container">
+      <h1 class="register-title">Tournament Registration</h1>
+
+      <form id="tournamentForm">
+        <div class="form-group">
+          <label class="form-label" for="teamName">Team Name *</label>
+          <input type="text" id="teamName" class="form-control" placeholder="Enter your team name" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="captainName">Captain Name *</label>
+          <input type="text" id="captainName" class="form-control" placeholder="Full name of team captain" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="email">Email *</label>
+          <input type="email" id="email" class="form-control" placeholder="Captain's email" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="game">Game *</label>
+          <select id="game" class="form-control" required>
+            <option value="">-- Select Game --</option>
+            <option value="cs2">Counter-Strike 2</option>
+            <option value="dota2">Dota 2</option>
+            <option value="mlbb">Mobile Legends</option>
+            <option value="tof">Tower of Fantasy</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="region">Region *</label>
+          <select id="region" class="form-control" required>
+            <option value="">-- Select Region --</option>
+            <option value="global">Global</option>
+            <option value="na">North America</option>
+            <option value="eu">Europe</option>
+            <option value="sea">Southeast Asia</option>
+            <option value="cn">China</option>
+            <option value="kr">Korea</option>
+          </select>
+        </div>
+
+        <button type="submit" class="btn-register">Submit Registration</button>
+      </form>
+
+      <a href="./index.html" class="back-link">← Back to Home</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('tournamentForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Registration submitted! (Demo mode)\nIn a real app, this would connect to a database.');
+      // You can later send data to a backend (Node.js, PHP, Firebase, etc.)
+    });
+  </script>
+
+</body>
+</html>

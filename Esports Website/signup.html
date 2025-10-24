@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - GameX</title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&family=Poppins:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Reuse your main CSS -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <style>
+    /* Sign Up-specific styles */
+    body {
+      background: var(--eerie-black);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .signup-container {
+      background: var(--raisin-black-1);
+      border: 1px solid hsla(0, 0%, 100%, 0.08);
+      border-radius: 12px;
+      padding: 40px;
+      width: 100%;
+      max-width: 460px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    }
+
+    .signup-logo {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .signup-logo img {
+      height: 50px;
+    }
+
+    .signup-title {
+      color: var(--white);
+      font-family: var(--ff-oswald);
+      font-size: var(--fs-2);
+      text-align: center;
+      margin-bottom: 25px;
+      text-transform: uppercase;
+    }
+
+    .input-group {
+      margin-bottom: 20px;
+    }
+
+    .input-label {
+      display: block;
+      color: var(--platinum);
+      font-size: var(--fs-9);
+      margin-bottom: 8px;
+      font-weight: var(--fw-500);
+    }
+
+    .input-field {
+      width: 100%;
+      padding: 14px 16px;
+      background: var(--raisin-black-2);
+      border: 1px solid hsla(0, 0%, 100%, 0.1);
+      border-radius: 6px;
+      color: var(--white);
+      font-size: var(--fs-8);
+      transition: border-color 0.2s ease;
+    }
+
+    .input-field:focus {
+      outline: none;
+      border-color: var(--bright-red);
+    }
+
+    .input-field::placeholder {
+      color: var(--light-gray);
+    }
+
+    .terms {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 25px;
+      font-size: var(--fs-9);
+      color: var(--platinum);
+    }
+
+    .terms input {
+      margin-top: 4px;
+    }
+
+    .terms a {
+      color: var(--bright-red);
+      text-decoration: none;
+    }
+
+    .terms a:hover {
+      text-decoration: underline;
+    }
+
+    .btn-signup {
+      width: 100%;
+      padding: 14px;
+      background: var(--red);
+      color: var(--white);
+      font-family: var(--ff-oswald);
+      font-size: var(--fs-7);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.2s ease;
+    }
+
+    .btn-signup:hover {
+      background: var(--bright-red);
+    }
+
+    .login-link {
+      text-align: center;
+      margin-top: 25px;
+      color: var(--platinum);
+      font-size: var(--fs-9);
+    }
+
+    .login-link a {
+      color: var(--bright-red);
+      text-decoration: none;
+      font-weight: var(--fw-500);
+    }
+
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+    /* Hide default cursor on desktop */
+@media (hover: hover) and (pointer: fine) {
+  body {
+    cursor: none !important;
+  }
+}
+
+.custom-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background: #ff0000;
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  box-shadow: 
+    0 0 10px #ff0000,
+    0 0 20px #ff0000,
+    0 0 30px #800000;
+  transition: transform 0.1s ease;
+}
+
+@media (hover: none) or (pointer: coarse) {
+  .custom-cursor {
+    display: none;
+  }
+}
+  </style>
+</head>
+
+<body>
+
+  <div class="signup-container">
+    <div class="signup-logo">
+      <img src="./assets/images/logo.svg" alt="GameX Logo">
+    </div>
+
+    <h1 class="signup-title">Create Account</h1>
+
+    <form id="signupForm">
+      <div class="input-group">
+        <label class="input-label" for="fullname">Full Name</label>
+        <input type="text" id="fullname" class="input-field" placeholder="Enter your name" required>
+      </div>
+
+      <div class="input-group">
+        <label class="input-label" for="email">Email</label>
+        <input type="email" id="email" class="input-field" placeholder="Enter your email" required>
+      </div>
+
+      <div class="input-group">
+        <label class="input-label" for="password">Password</label>
+        <input type="password" id="password" class="input-field" placeholder="Create a password" required minlength="6">
+      </div>
+
+      <div class="input-group">
+        <label class="input-label" for="confirm">Confirm Password</label>
+        <input type="password" id="confirm" class="input-field" placeholder="Re-enter password" required>
+      </div>
+
+      <div class="terms">
+        <input type="checkbox" id="terms" required>
+        <label for="terms">
+          I agree to the <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.
+        </label>
+      </div>
+
+      <button type="submit" class="btn-signup">Sign Up</button>
+    </form>
+
+    <div class="login-link">
+      Already have an account? <a href="./login.html">Log In</a>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById('signupForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      
+      const password = document.getElementById('password').value;
+      const confirm = document.getElementById('confirm').value;
+      
+      if (password !== confirm) {
+        alert('Passwords do not match!');
+        return;
+      }
+      
+      if (password.length < 6) {
+        alert('Password must be at least 6 characters.');
+        return;
+      }
+      
+      alert('Account created! (This is a demo)');
+      // In real app: send to backend
+    });
+  </script>
+<!-- Custom Red Glowing Cursor -->
+<div class="custom-cursor"></div>
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const cursor = document.querySelector('.custom-cursor');
+    if (!cursor) return;
+
+    // Only enable on desktop
+    if (window.matchMedia('(hover: hover) and (pointer: fine)').matches) {
+      document.addEventListener('mousemove', (e) => {
+        cursor.style.left = e.clientX + 'px';
+        cursor.style.top = e.clientY + 'px';
+      });
+
+      const interactive = document.querySelectorAll('a, button, input, label');
+      interactive.forEach(el => {
+        el.addEventListener('mouseenter', () => {
+          cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+        });
+        el.addEventListener('mouseleave', () => {
+          cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+        });
+      });
+    }
+  });
+  <!-- In signup.html -->
+
+  document.getElementById('signupForm').addEventListener('submit', function(e) {
+    e.preventDefault();
+    
+    const user = {
+      name: document.getElementById('fullname').value,
+      email: document.getElementById('email').value,
+      timestamp: new Date().toISOString()
+    };
+
+    // Save to browser storage
+    let users = JSON.parse(localStorage.getItem('gameX_users') || '[]');
+    users.push(user);
+    localStorage.setItem('gameX_users', JSON.stringify(users));
+
+    alert('Signed up! (Data saved in your browser only)');
+  });
+</script>
+</body>
+</html>

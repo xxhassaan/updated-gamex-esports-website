@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Esports Tournaments - Gaming website</title>
+
+  <!-- 
+    - favicon link
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Poppins:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+<!-- Custom Red Glowing Cursor -->
+<div class="custom-cursor"></div>
+<body id="top">
+
+<!-- 
+  - #HEADER
+-->
+
+<header class="header">
+  <div class="overlay" data-overlay></div>
+
+  <div class="container">
+    <a href="#" class="logo">
+      <img src="./assets/images/logo.svg" alt="GameX logo">
+    </a>
+
+    <button class="nav-open-btn" data-nav-open-btn>
+      <ion-icon name="menu-outline"></ion-icon>
+    </button>
+
+    <nav class="navbar" data-nav>
+      <div class="navbar-top">
+        <a href="#" class="logo">
+          <img src="./assets/images/logo.svg" alt="GameX logo"> <!-- Fixed: was about-img.png -->
+        </a>
+        <button class="nav-close-btn" data-nav-close-btn>
+          <ion-icon name="close-outline"></ion-icon>
+        </button>
+      </div>
+
+      <ul class="navbar-list">
+        <li><a href="#hero" class="navbar-link">Home</a></li>
+        <li><a href="#about" class="navbar-link">About</a></li>
+        <li><a href="#tournament" class="navbar-link">Tournament</a></li>
+        <li><a href="#team" class="navbar-link">Team</a></li>
+        <li><a href="#gears" class="navbar-link">Gears</a></li>
+        <li><a href="#contact" class="navbar-link">Contact</a></li>
+       
+      </ul>
+
+      <ul class="nav-social-list">
+        <li><a href="#" class="social-link"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#" class="social-link"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#" class="social-link"><ion-icon name="logo-github"></ion-icon></a></li>
+        <li><a href="#" class="social-link"><ion-icon name="logo-youtube"></ion-icon></a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="search">
+        <ion-icon name="search-outline"></ion-icon>
+      </button>
+
+      <a href="./login.html" class="btn-sign_in">
+        <div class="icon-box">
+          <ion-icon name="log-in-outline"></ion-icon>
+        </div>
+        <span>Log-in</span>
+      </a>
+    </div>
+  </div>
+</header>
+  <main>
+    <article>
+
+ <!-- 
+  - #HERO SLIDESHOW
+-->
+
+<section class="hero-slideshow" id="hero">
+  <div class="hero-slides">
+
+    <!-- Slide 1: CS2 -->
+    <div class="hero-slide active" data-slide="1">
+      <div class="slide-bg" style="background-image: url('./assets/images/cs2bg.png');"></div>
+      <div class="container slide-content">
+        <h2 class="slide-subtitle">Tactical Shooter</h2>
+        <h1 class="slide-title">Counter-Strike 2</h1>
+        <p class="slide-text">Precision. Strategy. Victory.</p>
+        <div class="btn-group">
+          <button class="btn btn-primary">
+            <ion-icon name="play-circle"></ion-icon>
+            <span>Watch Match</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 2: Tower of Fantasy -->
+    <div class="hero-slide" data-slide="2">
+      <div class="slide-bg" style="background-image: url('./assets/images/tofbg.jpg');"></div>
+      <div class="container slide-content">
+        <h2 class="slide-subtitle">Open-World RPG</h2>
+        <h1 class="slide-title">Tower of Fantasy</h1>
+        <p class="slide-text">Explore. Survive. Dominate.</p>
+        <div class="btn-group">
+          <button class="btn btn-primary">
+            <ion-icon name="play-circle"></ion-icon>
+            <span>Watch Trailer</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Slide 3: Dota 2 -->
+    <div class="hero-slide" data-slide="3">
+      <div class="slide-bg" style="background-image: url('./assets/images/dota2bg.jpg');"></div>
+      <div class="container slide-content">
+        <h2 class="slide-subtitle">MOBA Battle Arena</h2>
+        <h1 class="slide-title">Dota 2</h1>
+        <p class="slide-text">Team. Fight. Triumph.</p>
+        <div class="btn-group">
+          <button class="btn btn-primary">
+            <ion-icon name="play-circle"></ion-icon>
+            <span>Live Stream</span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Slide Indicators (Optional) -->
+  <div class="slide-indicators">
+    <span class="indicator active" data-slide="1"></span>
+    <span class="indicator" data-slide="2"></span>
+    <span class="indicator" data-slide="3"></span>
+  </div>
+</section>
+<div class="logo-slider-container">
+    <div class="logo-slider">
+        <div class="logo-slide">
+            <img src="./assets/images/activision-logo.png" alt="Activision">
+        </div>
+        <div class="logo-slide">
+            <img src="./assets/images/steam-logo.jpg" alt="Steam">
+        </div>
+        <div class="logo-slide">
+            <img src="./assets/images/infinity-ward.png" alt="Infinity Ward">
+        </div>
+        <div class="logo-slide">
+            <img src="./assets/images/activision-logo.png" alt="Activision Shanghai Studio">
+        </div>
+        <div class="logo-slide">
+            <img src="./assets/images/ealogo.png" alt="Electronic Arts">
+        </div>
+        <div class="logo-slide">
+            <img src="./assets/images/epic-games.png" alt="Epic Games">
+        </div>
+        <!-- Duplicate slides for seamless loop -->
+        <div class="logo-slide">
+            <img src="./assets/images/activision-logo.png" alt="Activision">
+        </div>
+        <div class="logo-slide">
+            <img src="./assets/images/steam-logo.jpg" alt="Steam">
+        </div>
+        <div class="logo-slide">
+            <img src="./assets/images/infinity-ward.png" alt="Infinity Ward">
+        </div>
+        <div class="logo-slide">
+            <img src="./assets/images/activision-logo.png" alt="Activision Shanghai Studio">
+        </div>
+        <div class="logo-slide">
+            <img src="./assets/images/ealogo.png" alt="Electronic Arts">
+        </div>
+        <div class="logo-slide">
+            <img src="./assets/images/epic-games.png" alt="Epic Games">
+        </div>
+    </div>
+</div>
+
+      <div class="section-wrapper">
+
+        <!-- 
+          - #ABOUT
+        -->
+
+        <section class="about" id="about">
+          <div class="container">
+
+            <figure class="about-banner">
+
+              <img src="./assets/images/about-img.png" alt="M shape" class="about-img">
+
+              <img src="./assets/images/character-1.png" alt="Game character" class="character character-1">
+
+              <img src="./assets/images/character-2.png" alt="Game character" class="character character-2">
+
+              <img src="./assets/images/character-3.png" alt="Game character" class="character character-3">
+
+            </figure>
+
+            <div class="about-content">
+
+              <p class="about-subtitle">Find team member</p>
+
+              <h2 class="about-title">Experience just for gamers <strong>offer</strong> </h2>
+
+              <p class="about-text">
+               One of the World Top Esports Event Managers.
+               Apply for the upcoming tournaments and Get a chance to win Exciting Prices.
+              </p>
+
+              <p class="about-bottom-text">
+                <ion-icon name="arrow-forward-circle-outline"></ion-icon>
+
+                <span>Will sharpen your brain and focus</span>
+              </p>
+
+            </div>
+
+          </div>
+        </section>
+
+
+
+
+
+        <!-- 
+          - #TOURNAMENT
+        -->
+
+        <section class="tournament" id="tournament">
+          <div class="container">
+
+            <div class="tournament-content">
+
+              <p class="tournament-subtitle">Check out our next</p>
+
+              <h2 class="h3 tournament-title">Gaming tournaments !</h2>
+
+              <p class="tournament-text">
+                Lpsum dolor sit amet, consectetur adipiscing elit, sed labore et dolore magna aliqua.
+              </p>
+
+             <a href="./tournament-register.html" class="btn btn-primary">Join with us</a>
+
+            </div>
+
+            <div class="tournament-prize">
+
+              <h2 class="h3 tournament-prize-title">Prize pool</h2>
+
+              <data value="80000">$80000</data>
+
+              <figure>
+                <img src="./assets/images/prize-img.png" alt="Prize image">
+              </figure>
+
+            </div>
+
+            <div class="tournament-winners">
+
+              <h2 class="h3 tournament-winners-title">Last winners</h2>
+
+              <ul class="tournament-winners-list">
+
+                <li>
+                  <div class="winner-card">
+
+                    <figure class="card-banner">
+                      <img src="./assets/images/winner-img-1.png" alt="Winner image">
+                    </figure>
+
+                    <h3 class="h5 card-title">1st place</h3>
+
+                  </div>
+                </li>
+
+                <li>
+                  <div class="winner-card">
+
+                    <figure class="card-banner">
+                      <img src="./assets/images/winner-img-2.png" alt="Winner image">
+                    </figure>
+
+                    <h3 class="h5 card-title">2nd place</h3>
+
+                  </div>
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+        </section>
+
+
+
+<!-- 
+  - #MATCH SCHEDULE (Auto-Scrolling Vertical Slider)
+-->
+
+<section class="match-schedule" id="match-schedule">
+  <div class="container">
+
+    <h2 class="h2 section-title">Upcoming Matches</h2>
+
+    <!-- Scrolling container -->
+    <div class="matches-slider">
+      <div class="matches-track">
+
+        <!-- Match 1 -->
+        <div class="match-card">
+          <div class="team team-left">
+            <img src="./assets/images/team-logo-1.png" alt="Purple Death Cadets" class="team-logo">
+            <div class="team-info">
+              <h3 class="h5 team-name">Purple Death Cadets</h3>
+              <span class="match-group">Group 04 | Match 06th</span>
+            </div>
+          </div>
+
+          <div class="match-time">
+            <time datetime="2024-05-25T10:00">10:00</time>
+            <span class="match-date">25th May 2026</span>
+            <div class="stream-icons">
+              <a href="#" aria-label="Watch on YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
+              <a href="#" aria-label="Watch on Twitch"><ion-icon name="logo-twitch"></ion-icon></a>
+            </div>
+          </div>
+
+          <div class="team team-right">
+            <div class="team-info">
+              <h3 class="h5 team-name">Trigger Brain Squad</h3>
+              <span class="match-group">Group 04 | Match 06th</span>
+            </div>
+            <img src="./assets/images/team-logo-2.png" alt="Trigger Brain Squad" class="team-logo">
+          </div>
+        </div>
+
+        <!-- Match 2 -->
+        <div class="match-card">
+          <div class="team team-left">
+            <img src="./assets/images/team-logo-3.png" alt="The Black Hat Hackers" class="team-logo">
+            <div class="team-info">
+              <h3 class="h5 team-name">The Black Hat Hackers</h3>
+              <span class="match-group">Group 05 | Match 02nd</span>
+            </div>
+          </div>
+
+          <div class="match-time">
+            <time datetime="2024-01-10T12:30">12:30</time>
+            <span class="match-date">10th Jan 2026</span>
+            <div class="stream-icons">
+              <a href="#" aria-label="Watch on YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
+              <a href="#" aria-label="Watch on Twitch"><ion-icon name="logo-twitch"></ion-icon></a>
+            </div>
+          </div>
+
+          <div class="team team-right">
+            <div class="team-info">
+              <h3 class="h5 team-name">Your Worst Nightmare</h3>
+              <span class="match-group">Group 05 | Match 02nd</span>
+            </div>
+            <img src="./assets/images/team-logo-4.png" alt="Phoenix Team" class="team-logo">
+          </div>
+        </div>
+
+        <!-- Match 3 -->
+        <div class="match-card">
+          <div class="team team-left">
+            <img src="./assets/images/team-logo-5.png" alt="Witches and Quizards" class="team-logo">
+            <div class="team-info">
+              <h3 class="h5 team-name">Witches and Quizards</h3>
+              <span class="match-group">Group 02 | Match 03rd</span>
+            </div>
+          </div>
+
+          <div class="match-time">
+            <time datetime="2024-12-15T04:20">04:20</time>
+            <span class="match-date">15th Dec 2025</span>
+            <div class="stream-icons">
+              <a href="#" aria-label="Watch on YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
+              <a href="#" aria-label="Watch on Twitch"><ion-icon name="logo-twitch"></ion-icon></a>
+            </div>
+          </div>
+
+          <div class="team team-right">
+            <div class="team-info">
+              <h3 class="h5 team-name">Resting Bitch Faces</h3>
+              <span class="match-group">Group 02 | Match 03rd</span>
+            </div>
+            <img src="./assets/images/team-logo-6.png" alt="The Killers" class="team-logo">
+          </div>
+        </div>
+
+        <!-- Duplicates for seamless loop -->
+        <!-- Match 1 (duplicate) -->
+        <div class="match-card">
+          <div class="team team-left">
+            <img src="./assets/images/team-logo-1.png" alt="Purple Death Cadets" class="team-logo">
+            <div class="team-info">
+              <h3 class="h5 team-name">Purple Death Cadets</h3>
+              <span class="match-group">Group 04 | Match 06th</span>
+            </div>
+          </div>
+          <div class="match-time">
+            <time datetime="2024-05-25T10:00">10:00</time>
+            <span class="match-date">25th May 2026</span>
+            <div class="stream-icons">
+              <a href="#" aria-label="Watch on YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
+              <a href="#" aria-label="Watch on Twitch"><ion-icon name="logo-twitch"></ion-icon></a>
+            </div>
+          </div>
+          <div class="team team-right">
+            <div class="team-info">
+              <h3 class="h5 team-name">Trigger Brain Squad</h3>
+              <span class="match-group">Group 04 | Match 06th</span>
+            </div>
+            <img src="./assets/images/team-logo-2.png" alt="Trigger Brain Squad" class="team-logo">
+          </div>
+        </div>
+
+        <!-- Match 2 (duplicate) -->
+        <div class="match-card">
+          <div class="team team-left">
+            <img src="./assets/images/team-logo-3.png" alt="The Black Hat Hackers" class="team-logo">
+            <div class="team-info">
+              <h3 class="h5 team-name">The Black Hat Hackers</h3>
+              <span class="match-group">Group 05 | Match 02nd</span>
+            </div>
+          </div>
+          <div class="match-time">
+            <time datetime="2024-01-10T12:30">12:30</time>
+            <span class="match-date">10th Jan 2026</span>
+            <div class="stream-icons">
+              <a href="#" aria-label="Watch on YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
+              <a href="#" aria-label="Watch on Twitch"><ion-icon name="logo-twitch"></ion-icon></a>
+            </div>
+          </div>
+          <div class="team team-right">
+            <div class="team-info">
+              <h3 class="h5 team-name">Your Worst Nightmare</h3>
+              <span class="match-group">Group 05 | Match 02nd</span>
+            </div>
+            <img src="./assets/images/team-logo-4.png" alt="Phoenix Team" class="team-logo">
+          </div>
+        </div>
+
+        <!-- Match 3 (duplicate) -->
+        <div class="match-card">
+          <div class="team team-left">
+            <img src="./assets/images/team-logo-5.png" alt="Witches and Quizards" class="team-logo">
+            <div class="team-info">
+              <h3 class="h5 team-name">Witches and Quizards</h3>
+              <span class="match-group">Group 02 | Match 03rd</span>
+            </div>
+          </div>
+          <div class="match-time">
+            <time datetime="2024-12-15T04:20">04:20</time>
+            <span class="match-date">15th Dec 2025</span>
+            <div class="stream-icons">
+              <a href="#" aria-label="Watch on YouTube"><ion-icon name="logo-youtube"></ion-icon></a>
+              <a href="#" aria-label="Watch on Twitch"><ion-icon name="logo-twitch"></ion-icon></a>
+            </div>
+          </div>
+          <div class="team team-right">
+            <div class="team-info">
+              <h3 class="h5 team-name">Resting Bitch Faces</h3>
+              <span class="match-group">Group 02 | Match 03rd</span>
+            </div>
+            <img src="./assets/images/team-logo-6.png" alt="The Killers" class="team-logo">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- 
+  - #FEATURED GAMES & TOURNAMENT INFO
+-->
+
+<section class="featured-games" id="featured-games">
+  <div class="container">
+
+    <h2 class="h2 section-title">Featured Games</h2>
+
+  <div class="games-grid">
+
+  <!-- Counter-Strike 2 -->
+  <a href="https://www.counter-strike.net/" target="_blank" class="game-tile">
+    <figure class="tile-image">
+      <img src="./assets/images/csbg.jpeg" alt="Counter-Strike 2">
+    </figure>
+    <div class="tile-content">
+      <h3 class="h5 tile-title">Counter-Strike 2</h3>
+      <div class="tile-tags">
+        <span class="tag">Global</span>
+        <span class="tag">Simplified Chinese</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Tower of Fantasy -->
+  <a href="https://www.toweroffantasy-global.com/" target="_blank" class="game-tile">
+    <figure class="tile-image">
+      <img src="./assets/images/tof.jpg" alt="Tower of Fantasy">
+    </figure>
+    <div class="tile-content">
+      <h3 class="h5 tile-title">Tower of Fantasy</h3>
+      <div class="tile-tags">
+        <span class="tag">Global</span>
+        <span class="tag">PlayStation</span>
+      </div>
+    </div>
+  </a>
+
+  <!-- Dota 2 -->
+  <a href="https://www.dota2.com/" target="_blank" class="game-tile">
+    <figure class="tile-image">
+      <img src="./assets/images/dota2.jpg" alt="Dota 2">
+    </figure>
+    <div class="tile-content">
+      <h3 class="h5 tile-title">Dota 2</h3>
+      <div class="tile-tags">
+        <span class="tag">Simplified Chinese</span>
+        <span class="tag">Korean</span>
+      </div>
+    </div>
+  </a>
+
+</div>
+
+<!-- 
+  - #TOURNAMENT + VIDEO + GALLERY (3-column layout)
+-->
+
+<section class="tournament-video-gallery" id="media">
+  <div class="container">
+
+    <!-- Tournament Info -->
+    <div class="info-box">
+      <h3 class="h3">Tournament Info</h3>
+
+      <ul class="info-list">
+        <li>12 Teams</li>
+        <li>Quarterfinals → Semifinals → Grand Final</li>
+        <li>November 15–20, 2025</li>
+        <li>Prizes: Cash + Exclusive Gun Skins</li>
+      </ul>
+
+      <div class="registration-status">
+        <p>Hurry up! Registration opens in:</p>
+        <h4 id="countdown">Loading...</h4>
+        <a href="./tournament-register.html" class="btn btn-primary">Register Now</a>
+      </div>
+
+    </div>
+
+    <!-- YouTube Video -->
+    <div class="video-box">
+      <iframe
+        src="https://www.youtube.com/embed/F7HFWuo_utY?autoplay=1&mute=1&loop=1&playlist=F7HFWuo_utY"
+        title="Esports Highlights"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen>
+      </iframe>
+    </div>
+
+
+ <!-- 
+  - #GALLERY (Auto-Scroll + Big Images + Navigation)
+-->
+
+<section class="gallery-auto-scroll" id="gallery">
+  <div class="container">
+
+    <h2 class="h2 section-title">Gallery</h2>
+
+    <!-- Gallery Track -->
+    <div class="gallery-track">
+
+      <!-- Image 1 -->
+      <div class="gallery-item">
+        <img src="./assets/images/Match-highlights.jpg" alt="Gallery Image 1" class="gallery-image">
+        <div class="gallery-caption">
+          <h3>Match Highlights</h3>
+          <p>Best plays from last tournament.</p>
+        </div>
+      </div>
+
+      <!-- Image 2 -->
+      <div class="gallery-item">
+        <img src="./assets/images/Team-celebration.jpg" alt="Gallery Image 2" class="gallery-image">
+        <div class="gallery-caption">
+          <h3>Team Celebrations</h3>
+          <p>Victory moments from top teams.</p>
+        </div>
+      </div>
+
+      <!-- Image 3 -->
+      <div class="gallery-item">
+        <img src="./assets/images/players-preparing.jpg" alt="Gallery Image 3" class="gallery-image">
+        <div class="gallery-caption">
+          <h3>Behind the Scenes</h3>
+          <p>Players preparing for battle.</p>
+        </div>
+      </div>
+
+      <!-- Image 4 -->
+      <div class="gallery-item">
+        <img src="./assets/images/playeroftheseries.jpg" alt="Gallery Image 4" class="gallery-image">
+        <div class="gallery-caption">
+          <h3>Best Player of the Series</h3>
+          <p>Player of the Series in the Recent Tournament.</p>
+        </div>
+      </div>
+
+      <!-- Duplicates for seamless loop -->
+      <div class="gallery-item">
+        <img src="./assets/images/Match-highlights.jpg" alt="Gallery Image 1" class="gallery-image">
+        <div class="gallery-caption">
+          <h3>Match Highlights</h3>
+          <p>Best plays from last tournament.</p>
+        </div>
+      </div>
+
+      <div class="gallery-item">
+        <img src="./assets/images/Team-celebration.jpg" alt="Gallery Image 2" class="gallery-image">
+        <div class="gallery-caption">
+          <h3>Team Celebrations</h3>
+          <p>Victory moments from top teams.</p>
+        </div>
+      </div>
+      <!-- Image 3 -->
+      <div class="gallery-item">
+        <img src="./assets/images/players-preparing.jpg" alt="Gallery Image 3" class="gallery-image">
+        <div class="gallery-caption">
+          <h3>Behind the Scenes</h3>
+          <p>Players preparing for battle.</p>
+        </div>
+      </div>
+
+      <!-- Image 4 -->
+      <div class="gallery-item">
+        <img src="./assets/images/playeroftheseries.jpg" alt="Gallery Image 4" class="gallery-image">
+        <div class="gallery-caption">
+          <h3>Best Player of the Series</h3>
+          <p>Player of the Series in the Recent Tournament.</p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="gallery-nav">
+      <button class="nav-btn prev" aria-label="Previous">
+        <ion-icon name="chevron-back"></ion-icon>
+      </button>
+      <button class="nav-btn next" aria-label="Next">
+        <ion-icon name="chevron-forward"></ion-icon>
+      </button>
+    </div>
+
+  </div>
+</section>
+
+      <!-- Team Members Slider -->
+<div class="team-slider">
+  <div class="team-track">
+
+    <!-- Original 11 members -->
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-1.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-2.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-3.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-4.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-6.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-7.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-8.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-9.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-10.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-11.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-12.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+
+    <!-- Duplicates for seamless loop -->
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-1.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-2.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-3.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-4.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-6.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-7.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-8.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-9.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-10.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-11.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+    <a href="#" class="team-member">
+      <figure><img src="./assets/images/team-member-12.png" alt="Team member"></figure>
+      <ion-icon name="link-outline"></ion-icon>
+    </a>
+
+  </div>
+</div>
+
+<!-- Keep the "View All" button below -->
+<button class="btn btn-primary">view all members</button>
+
+<!-- 
+  - #GEARS (Game Skins)
+-->
+
+<section class="gears" id="gears">
+  <div class="container">
+
+    <h2 class="h2 section-title">Check Our Game Skins</h2>
+
+    <ul class="gears-list">
+
+      <!-- PUBG Mobile: M416 Glacier -->
+      <li>
+        <div class="gears-card">
+          <div class="card-banner">
+            <a href="https://sketchfab.com/3d-models/pubg-mobile-m4-glacier-cbd2336d8e8b44a2a95a6d1b5c1a7a91" target="_blank">
+              <img src="./assets/images/glacier.jpeg" alt="PUBG M416 Glacier Skin">
+            </a>
+            <button class="share">
+              <ion-icon name="share-social"></ion-icon>
+            </button>
+          </div>
+
+          <div class="card-content">
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title">M416 Glacier</h3>
+              <p class="card-subtitle">PUBG Mobile</p>
+            </div>
+            <div class="card-prize">Free</div>
+          </div>
+
+          <div class="card-actions">
+            <button class="btn btn-primary">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Add to Collection</span>
+            </button>
+            <button class="btn card-btn">
+              <ion-icon name="heart-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </li>
+
+      <!-- CS2: AK-47 Skin -->
+      <li>
+        <div class="gears-card">
+          <div class="card-banner">
+            <a href="https://dotesports.com/counter-strike/news/best-cs2-skins-14041" target="_blank">
+              <img src="./assets/images/ak47 skin.jpg" alt="CS2 AK-47 Skin">
+            </a>
+            <button class="share">
+              <ion-icon name="share-social"></ion-icon>
+            </button>
+          </div>
+
+          <div class="card-content">
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title">AK-47 Skin</h3>
+              <p class="card-subtitle">Counter-Strike 2</p>
+            </div>
+            <div class="card-prize">$24</div>
+          </div>
+
+          <div class="card-actions">
+            <button class="btn btn-primary">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Add to Collection</span>
+            </button>
+            <button class="btn card-btn">
+              <ion-icon name="heart-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </li>
+
+      <!-- Call of Duty: MW2 Battle Pass -->
+      <li>
+        <div class="gears-card">
+          <div class="card-banner">
+            <a href="https://www.dbltap.com/posts/are-there-warzone-2-gift-cards-01gmnyaas0fj" target="_blank">
+              <img src="./assets/images/gift-card.jpg" alt="Call of Duty MW2 Battle Pass">
+            </a>
+            <button class="share">
+              <ion-icon name="share-social"></ion-icon>
+            </button>
+          </div>
+
+          <div class="card-content">
+            <div class="card-title-wrapper">
+              <h3 class="h3 card-title">Battle Pass</h3>
+              <p class="card-subtitle">Call of Duty MW2</p>
+            </div>
+            <div class="card-prize">$10</div>
+          </div>
+
+          <div class="card-actions">
+            <button class="btn btn-primary">
+              <ion-icon name="add-outline"></ion-icon>
+              <span>Add to Collection</span>
+            </button>
+            <button class="btn card-btn">
+              <ion-icon name="heart-outline"></ion-icon>
+            </button>
+          </div>
+        </div>
+      </li>
+
+    </ul>
+
+  </div>
+</section>
+
+
+       <!--
+  - #NEWSLETTER
+-->
+
+<section class="newsletter" style="background-color: #ff0000; color: #ffffff; padding: 40px 0;">
+  <div class="container">
+
+    <div class="newsletter-card" style="text-align: center; max-width: 600px; margin: 0 auto;">
+
+      <div class="newsletter-content">
+        <figure class="newsletter-img">
+          <img src="./assets/images/newsletter-img.png" alt="Newsletter image" style="max-width: 100%; height: auto;">
+        </figure>
+
+        <h2 class="h2 newsletter-title" 
+            style="color: #ffffff; 
+                   text-shadow: 0 0 5px #ff0000, 
+                                0 0 10px #ff0000, 
+                                0 0 20px #ff0000, 
+                                0 0 40px #ff0000; 
+                   margin: 20px 0;">
+          Subscribe to our newsletter
+        </h2>
+      </div>
+
+      <form action="" class="newsletter-form" style="display: flex; flex-direction: column; gap: 10px; align-items: center;">
+        <input type="email" 
+               name="email" 
+               required 
+               placeholder="Your Email Address" 
+               class="input-field"
+               style="padding: 12px; width: 100%; max-width: 300px; border: none; border-radius: 4px; outline: none;">
+        
+        <button type="submit" 
+                class="btn btn-secondary"
+                style="background-color: #ffffff; 
+                       color: #ff0000; 
+                       border: 2px solid #ffffff; 
+                       padding: 10px 20px; 
+                       font-weight: bold; 
+                       border-radius: 4px; 
+                       cursor: pointer;">
+          Subscribe
+        </button>
+      </form>
+
+    </div>
+
+  </div>
+</section>
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer>
+
+    <div class="footer-top">
+      <div class="container">
+
+        <div class="footer-brand-wrapper">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" alt="GameX logo">
+          </a>
+
+          <div class="footer-menu-wrapper">
+
+            <ul class="footer-menu-list">
+
+              <li>
+                <a href="#hero" class="footer-menu-link">Home</a>
+              </li>
+
+              <li>
+                <a href="#about" class="footer-menu-link">About</a>
+              </li>
+
+              <li>
+                <a href="#tournament" class="footer-menu-link">Tournament</a>
+              </li>
+
+              <li>
+                <a href="#team" class="footer-menu-link">Team</a>
+              </li>
+
+              <li>
+                <a href="#gears" class="footer-menu-link">Gears</a>
+              </li>
+
+              <li>
+                <a href="#" class="footer-menu-link">Contact</a>
+              </li>
+
+            </ul>
+
+            <div class="footer-input-wrapper">
+              <input type="text" name="message" required placeholder="Find Here Now" class="footer-input">
+
+              <button class="btn btn-primary">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="footer-quicklinks">
+
+          <ul class="quicklink-list">
+
+            <li>
+              <a href="#" class="quicklink-item">Faq</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-item">Help center</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-item">Terms of use</a>
+            </li>
+
+            <li>
+              <a href="#" class="quicklink-item">Privacy</a>
+            </li>
+
+          </ul>
+
+          <ul class="footer-social-list">
+
+            <li>
+              <a href="#" class="footer-social-link">
+                <ion-icon name="logo-discord"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-link">
+                <ion-icon name="logo-twitch"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-link">
+                <ion-icon name="logo-xbox"></ion-icon>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-social-link">
+                <ion-icon name="logo-youtube"></ion-icon>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright">
+          Copyright &copy; 2025 <a href="#">By Muhammad Hassaan Bokhari</a>.1237802113.... all rights reserved
+        </p>
+
+        <figure class="footer-bottom-img">
+          <img src="./assets/images/footer-bottom-img.png" alt="Online payment companies logo">
+        </figure>
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - #GO TO TOP
+  -->
+
+  <a href="#top" class="btn btn-primary go-top" data-go-top>
+    <ion-icon name="chevron-up-outline"></ion-icon>
+  </a>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
